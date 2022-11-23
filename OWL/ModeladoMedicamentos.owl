@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#como_adquirirlo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#como_adquirirlo">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#como_adquirirlo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Prescripcion"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#como_adquirirlo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Con_Receta"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipo_laboratorio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipo_laboratorio">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipo_laboratorio"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Laboratorio_Titular"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#cantidad_de_dosis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#cantidad_de_dosis">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipos_de_forma_farmaceutica"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#nombre_del_medicamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#nombre_del_medicamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipos_de_forma_farmaceutica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipos_de_forma_farmaceutica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Dosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipos_de_principios_activos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipos_de_principios_activos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Principios_Activos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipos_de_vias_de_administracion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#tipos_de_vias_de_administracion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Vias_de_Administracion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Con_Receta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Con_Receta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Dosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Dosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Forma_Farmaceutica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Forma_Farmaceutica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Forma_Farmaceutica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Laboratorio_Titular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Laboratorio_Titular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Numero_de_Registro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Numero_de_Registro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Prescripcion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Prescripcion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Principios_Activos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Principios_Activos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Vias_de_Administracion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Vias_de_Administracion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#Medicamentos"/>
+        <cantidad_de_dosis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50mg</cantidad_de_dosis>
+        <nombre_del_medicamento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lacosamida Premium Pharma</nombre_del_medicamento>
+        <tipos_de_forma_farmaceutica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprimido recubierto con película</tipos_de_forma_farmaceutica>
+        <tipos_de_principios_activos rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lacosamida</tipos_de_principios_activos>
+        <tipos_de_vias_de_administracion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vía Oral</tipos_de_vias_de_administracion>
+        <rdfs:label>Ejemplo de Medicamento</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
