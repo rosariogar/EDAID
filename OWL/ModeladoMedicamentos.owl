@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/mruiz/ontologies/2022/10/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:medicamentos="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#como_administrarlo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#como_administrarlo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Vias_de_Administracion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#principio_Activo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#principio_Activo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Principios_Activos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#tipo_laboratorio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#tipo_laboratorio">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Laboratorio_Titular"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#tipo_prescripcion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#tipo_prescripcion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Prescripcion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#cantidad_de_dosis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#cantidad_de_dosis">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Dosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#como_adquirirlo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#como_adquirirlo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Con_Receta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#tipos_de_forma_farmaceutica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#tipos_de_forma_farmaceutica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Forma_Farmaceutica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Con_Receta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Con_Receta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Dosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Dosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Forma_Farmaceutica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Forma_Farmaceutica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Laboratorio_Titular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Laboratorio_Titular"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Prescripcion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Prescripcion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Principios_Activos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Principios_Activos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Vias_de_Administracion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Vias_de_Administracion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Biontech_Manufacturing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Biontech_Manufacturing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Laboratorio_Titular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Comirnaty_Original -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Comirnaty_Original">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento"/>
+        <medicamentos:como_administrarlo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Intramuscular"/>
+        <medicamentos:principio_Activo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Tozinameran"/>
+        <medicamentos:tipo_laboratorio rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Biontech_Manufacturing"/>
+        <medicamentos:tipo_prescripcion rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Uso_Hospitalario"/>
+        <medicamentos:cantidad_de_dosis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 mg</medicamentos:cantidad_de_dosis>
+        <medicamentos:como_adquirirlo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con receta</medicamentos:como_adquirirlo>
+        <medicamentos:tipos_de_forma_farmaceutica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dispersion Inyectable</medicamentos:tipos_de_forma_farmaceutica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Comirnaty_Original_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Comirnaty_Original_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento"/>
+        <medicamentos:como_administrarlo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Intramuscular"/>
+        <medicamentos:principio_Activo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Tozinameran"/>
+        <medicamentos:tipo_laboratorio rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Biontech_Manufacturing"/>
+        <medicamentos:tipo_prescripcion rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Uso_Hospitalario"/>
+        <medicamentos:cantidad_de_dosis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 mg</medicamentos:cantidad_de_dosis>
+        <medicamentos:como_adquirirlo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con receta</medicamentos:como_adquirirlo>
+        <medicamentos:tipos_de_forma_farmaceutica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dispersión Inyectable</medicamentos:tipos_de_forma_farmaceutica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Principios_Activos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida_Premium_Pharma_200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida_Premium_Pharma_200">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento"/>
+        <medicamentos:como_administrarlo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Oral"/>
+        <medicamentos:principio_Activo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida"/>
+        <medicamentos:tipo_laboratorio rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Premium_Pharma"/>
+        <medicamentos:tipo_prescripcion rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento_Sujeto_A_Prescripcion_Medica"/>
+        <medicamentos:cantidad_de_dosis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200 mg</medicamentos:cantidad_de_dosis>
+        <medicamentos:como_adquirirlo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con receta</medicamentos:como_adquirirlo>
+        <medicamentos:tipos_de_forma_farmaceutica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprimido cubierto con pelicula</medicamentos:tipos_de_forma_farmaceutica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida_Premium_Pharma_50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida_Premium_Pharma_50">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento"/>
+        <medicamentos:como_administrarlo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Oral"/>
+        <medicamentos:principio_Activo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida"/>
+        <medicamentos:tipo_laboratorio rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Premium_Pharma"/>
+        <medicamentos:tipo_prescripcion rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento_Sujeto_A_Prescripcion_Medica"/>
+        <medicamentos:cantidad_de_dosis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50 mg</medicamentos:cantidad_de_dosis>
+        <medicamentos:como_adquirirlo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con receta</medicamentos:como_adquirirlo>
+        <medicamentos:tipos_de_forma_farmaceutica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprimido recubierto con pelicula</medicamentos:tipos_de_forma_farmaceutica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida_Zentiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida_Zentiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento"/>
+        <medicamentos:como_administrarlo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Oral"/>
+        <medicamentos:principio_Activo rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Lacosamida"/>
+        <medicamentos:tipo_laboratorio rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Zentiva_KS"/>
+        <medicamentos:tipo_prescripcion rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento_Sujeto_A_Prescripcion_Medica"/>
+        <medicamentos:cantidad_de_dosis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 mg</medicamentos:cantidad_de_dosis>
+        <medicamentos:como_adquirirlo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sin receta</medicamentos:como_adquirirlo>
+        <medicamentos:tipos_de_forma_farmaceutica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprimido recubierto con pelicula</medicamentos:tipos_de_forma_farmaceutica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento_Sujeto_A_Prescripcion_Medica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Medicamento_Sujeto_A_Prescripcion_Medica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Prescripcion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Premium_Pharma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Premium_Pharma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Laboratorio_Titular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Tozinameran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Tozinameran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Principios_Activos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Uso_Hospitalario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Uso_Hospitalario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Prescripcion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Intramuscular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Intramuscular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Vias_de_Administracion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Oral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_Oral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Vias_de_Administracion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_intravenosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Via_intravenosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Vias_de_Administracion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Zentiva_KS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Zentiva_KS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mruiz/ontologies/2022/10/medicamentos#Laboratorio_Titular"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
